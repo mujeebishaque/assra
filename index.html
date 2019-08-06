@@ -89,7 +89,7 @@
               <div class="text">
               	<h3 class="mb-4">Donate Money</h3>
               	<p>Help the disabled children to have a better chance at life.</p>
-              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2" id="donate">Donate Now</a></p>
+              	<p id='donate_second'><a href="#" class="btn btn-white px-3 py-2 mt-2" id="donate_second">Donate Now</a></p>
               </div>
             </div>
     		</div>
@@ -420,6 +420,14 @@
 <script>
 
   $('#donate').click(function(e){
+    Swal.fire({
+      type: 'info',
+      html : 'Account Title : Assra Welfare Society <br /> Account Number : 4042370261 <br /> IBAN : PK11NBPA0356004042370261 <br /> Swift Code : NBPAPKKAA02L ',
+      title: 'Please Donate To Following Bank.',
+      footer: 'National Bank Pakistan, Lahore Cantt'
+    })
+  });
+  $('#donate_second').click(function(e){
     Swal.fire({
       type: 'info',
       html : 'Account Title : Assra Welfare Society <br /> Account Number : 4042370261 <br /> IBAN : PK11NBPA0356004042370261 <br /> Swift Code : NBPAPKKAA02L ',
